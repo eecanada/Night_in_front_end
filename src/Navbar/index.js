@@ -2,7 +2,7 @@ import React  from 'react';
 
 import Nav from './style.js'
 
-import '../../public/NightInLogo.svg'
+import Logo from './horizontal_night_in_logo.svg'
 import '../../public/HorizontalNightInLogo.svg'
 
 function Navbar(props) {
@@ -15,13 +15,13 @@ function Navbar(props) {
         props.logoutCurrentUser()
     }
     
-    return( 
+    return(
         <Nav>
             <main>
                 <div>
                     <picture>
-                        <source media="(min-width: 700px)" srcSet="HorizontalNightInLogo.svg"/>
-                        <img alt="Night In Logo" src='NightInLogo.svg' style={{'margin' : '1em 3em'}}/>
+                        <source media="(min-width: 700px)" srcSet={Logo}/>
+                        <img alt="Night In Logo" src={Logo} style={{'margin' : '1em 3em'}}/>
                     </picture>
                 </div>
                 <section>
