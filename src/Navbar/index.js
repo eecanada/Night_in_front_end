@@ -3,7 +3,6 @@ import React  from 'react';
 import Nav from './style.js'
 
 import Logo from './horizontal_night_in_logo.svg'
-import '../../public/HorizontalNightInLogo.svg'
 
 function Navbar(props) {
 
